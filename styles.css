@@ -1,0 +1,301 @@
+/* Reset básico */
+body, h1, h2, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais */
+body {
+    font-family: "Secular One", Arial, sans-serif;
+    background-color: #181818;
+    color: #fff;
+}
+
+header, footer {
+    background-color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo img {
+    width: 200px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+.menu a {
+    text-decoration: solid;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: 1px solid #ff0000;
+    border-radius: 100px;
+    transition: background-color 0.3s;
+}
+
+.menu a:hover {
+    background-color: #ff0000;
+}
+
+footer {
+    margin-top: 20px;
+}
+
+footer .social img {
+    width: 30px;
+    margin: 0 5px;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre {
+    max-width: 10000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sobre p {
+    text-align: justify;
+    margin: 20px 40px;
+    line-height: 1.8;
+    color: #ddd;
+    font-size: 1rem;
+}
+
+.sobre h3 {
+    text-align: left;
+    margin-left: 30px;
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 10px;
+}
+
+.video-container iframe {
+    max-width: 100%;
+    border: none;
+    border-radius: 50px;
+}
+
+.enredo img {
+    width: 800px;
+    height: auto;
+    border-radius: 10px;
+    margin-right: 20px;
+    float: top;
+}
+
+/* Estilo para os cartões da tripulação */
+#tripulacao {
+    text-align: center;
+    color: #f3ff9c;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    background: #292929;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 900px;
+    overflow: hidden;
+    padding: 20px;
+    gap: 20px;
+}
+
+.card-img img {
+    width: 500px;
+    border-radius: 10px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h2 {
+    font-size: 1.8rem;
+    color: #ff0000;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    font-size: 1rem;
+    color: #ddd;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.sub-itens {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    color: #ddd;
+}
+
+.sub-itens-arcos li {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, Times, serif;
+    font-size: 0.9rem;
+    margin-left: 70px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.sub-itens-arcos li::before {
+    content: '•';
+    color: #ff0000;
+    margin-right: 8px;
+}
+
+.sub-itens li {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+}
+
+.sub-itens li::before {
+    content: '•';
+    color: #ff0000;
+    margin-right: 8px;
+}
+
+.frutas-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.fruta-card {
+    background-color: #1f1f1f;
+    padding: 15px;
+    border-radius: 10px;
+    width: 250px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.fruta-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.fruta-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+}
+
+.fruta-card ul {
+    font-family: 'Times New Roman', Times, serif;
+    list-style: none;
+    padding-left: 0;
+    margin: 10px 0;
+}
+
+.fruta-card li {
+    margin: 5px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 15px;
+    background-color: #e63946;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #a82024;
+}
+
+.formulario-contato {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.formulario-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea,
+.formulario-contato button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.formulario-contato input,
+.formulario-contato select,
+.formulario-contato textarea {
+    background: #333;
+    color: #fff;
+}
+
+h3 + p {
+    font-style: italic;
+}
+
+h3 ~ p {
+    color: #ddd;
+}
+
+.formulario-contato textarea {
+    resize: none;
+    height: 80px;
+}
+
+.formulario-contato button {
+    background: #ff0015;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.formulario-contato button:hover {
+    background: #e63946;
+}
+
+footer .social img {
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+footer .social img:hover {
+    transform: scale(1.2);
+    filter: brightness(0.8) invert(0.8);
+}
